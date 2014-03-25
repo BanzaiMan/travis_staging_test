@@ -1,3 +1,4 @@
 language: python
 
-script: travis_wait 15 sleep 1230
+notification:
+  hipchat: a21b28b2863acbee3ccb17da36a173@Travis CI
