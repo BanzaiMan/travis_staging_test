@@ -1,11 +1,5 @@
 language: ruby
 
-notifications:
-  irc:
-    channels:
-      - "irc.paraphysics.net#znc"
-    on_success: always
-    on_failure: always
-
-script:
-  - true
+branches:
+  only:
+    - master
