@@ -1,4 +1,5 @@
-language: python
+language: ruby
 
-notification:
-  hipchat: a21b28b2863acbee3ccb17da36a173@Travis CI
+branches:
+  only:
+    - master
