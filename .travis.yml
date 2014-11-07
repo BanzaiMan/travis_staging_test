@@ -5,3 +5,5 @@ php: hhvm
 script: cat /etc/hhvm/php.ini
 
 install: true
+
+sudo: false
