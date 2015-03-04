@@ -10,3 +10,6 @@ install:
 
 script:
   - true
+
+notifications:
+  slack: 'travisci:foobar#development'
