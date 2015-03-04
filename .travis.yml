@@ -1,14 +1,12 @@
-sudo: false
-
 language: php
-
 php:
-  - '7'
-  - '7.0'
-  - nightly
-
+- '7'
+- '7.0'
+- nightly
 install:
-  - true
-
+- true
 script:
-  - true
+- true
+notifications:
+  slack:
+    secure: OXkwRaM3SMHznm2Tbq+OuKEmocYcfRP7IpSrTmMEU4lApDH6ktbiiRS3eutIINKVXB/z5v7iP3LfswNtIRX3LJDx0higdM4xGrMEYT6/yKG4dPQ0XKhCZbOuag58kwpKLVJsgaREEE/IqvvKuuhbIUgNL7P6cJl3sTjdDup2uI0=
