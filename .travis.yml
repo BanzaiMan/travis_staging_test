@@ -1,10 +1,26 @@
-language: ruby
+language: swift
 
 rvm:
   - 2.1.5
   
 sudo: false
 
+cache:
+  branch: ha-feature-tar-x-one-pass
+  directories:
+    - foo
+    - bar
+    - baz
+
+before_install:
+  - touch foo/bar
+  - touch bar/baz
+
 install: true
 
 script: true
+
+after_script:
+  - cat $CASHER_DIR/bin/casher
+  - cat $CASHER_DIR/tar.log
+  - cat $CASHER_DIR/tar.err.log
