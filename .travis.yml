@@ -9,4 +9,4 @@ before_install:
   - echo -e "source 'https://rubygems.org'\ngem 'i18n'" > Gemfile
 
 script:
-  - echo hello
+  - env | grep TRAVIS_
