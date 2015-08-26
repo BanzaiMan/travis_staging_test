@@ -1,21 +1,10 @@
-language: node_js
+language: ruby
 
 sudo: false
 
-node_js:
-  - '0.12'
+addons:
+  mariadb: '10.1'
 
 install: true
 
 script: true
-
-deploy:
-  provider: boxfuse
-  edge:
-    branch: '+refs/pull/319/merge:'
-  access_key_id: foo
-  secret_access_key: bar
-  bucket: baz
-  on:
-    all_branches: true
-
