@@ -1,27 +1,16 @@
 language: ruby
 
-sudo: false
+sudo: required
+
+dist: precise
 
 addons:
-  apt:
-    sources:
-      - debian-sid
-    packages:
-      - cmake
-      - p7zip-full
-      - build-essential
-      - sshpass
-      - lua5.2
-      - lua-filesystem
-      - luasocket
-      - luarocks
-      - doxygen
-      - libsdl2-dev
-      - libsdl2-mixer-dev
-      - libfreetype6-dev
+  hostname: 'shorthostname'
+
+rvm: default
+
+install:
+  - true
 
 script:
   - true
-
-notifications:
-  email: false
