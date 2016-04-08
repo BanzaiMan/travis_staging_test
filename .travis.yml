@@ -8,13 +8,12 @@ php:
 env:
   - SLEEP=1
   - SLEEP=30
-  - SLEEP=360
 
 matrix:
   fast_finish: true
   allow_failures:
     - env:
-        SLEEP=360
+        SLEEP=30
 
 notifications:
   email: false
@@ -27,4 +26,4 @@ notifications:
 install:
   - true
 script:
-  - sleep $SLEEP; false
+  - sleep $SLEEP
