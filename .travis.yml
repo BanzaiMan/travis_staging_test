@@ -1,12 +1,17 @@
-language: php
+language: java
 
-sudo: false
+jdk: openjdk7
+
+sudo: required
+
+addons:
+  hostname: tooshort
 
 install:
   - true
 
 script:
-  - true
+  - cat ~/build.sh
 
 notifications:
   email: false
