@@ -11,7 +11,9 @@ script:
 addons:
   jwt:
     secure: "D6N42Hl8iB7UC65N+T3A1lpxFhRr3GnI8O1uHqNCXAC16ycK89IRigXR+kgqq7QHZvxuVOdpRXLBG9Nhkw9A2t+hAJJWSmsOODmH175jdY/owZPpK7+Wb9kO64R4F/fgXSoea5XUlHeyzJtSRz9+3lNPJYBoJUNSwswgP0QMWbU="
-  sauce_connect: true
+  sauce_connect:
+    username: "foobarbaz"
+    access_key: "secret_access_key"
 
 notifications:
   email: false
