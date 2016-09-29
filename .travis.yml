@@ -6,7 +6,7 @@ install:
   - true
 
 script:
-  - cat ~/build.sh
+  - env | grep TRAVIS
 
 addons:
   jwt:
