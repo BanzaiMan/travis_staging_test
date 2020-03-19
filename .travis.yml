@@ -1,7 +1,7 @@
 language: ruby
-sudo: false
+install: skip
+
+script: skip
 
 notifications:
-  webhooks: http://requestb.in/1ja2u801
-  
-  
+  email: false
