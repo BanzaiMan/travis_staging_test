@@ -2,6 +2,11 @@ language: ruby
 
 sudo: true
 
+addons:
+  sonarcloud:
+    organization: "sonarcloud_organization_key" # the key of the org you chose at step #3
+    token:
+      secure: "*********" # encrypted value of your token
 env:
   global:
     - secure: "CBAnlrs/490FSTmOYImb+agGah6UQeVOQ6jfcgPCXWbRPDmSsAjAlWsZEZc0Q0rlF3Aq47h6mw228qbO4x+VFYfj9Ap+hZABZM6dDrxEUSpLbEROaovbYC7bQgJCRGCFA50mOZXu+wb0RXxupNf5tfL61sanQ1QMQ5g1dIZTZw4="
