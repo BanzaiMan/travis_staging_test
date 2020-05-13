@@ -1,5 +1,6 @@
 language: ruby
 dist: bionic
+rvm: 2.7
 
 addons:
   rethinkdb: 2.3.7
