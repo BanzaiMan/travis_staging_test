@@ -1,6 +1,9 @@
 language: ruby
 install: skip
-script: skip
+script: git config -l | grep core
+
+git:
+  symlinks: true
 
 #     - stage: setupcache
 #     - sudo: required
