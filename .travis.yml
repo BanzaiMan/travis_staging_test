@@ -1,8 +1,8 @@
-language: shell
+language: bash
 os: freebsd
 dist: '12.1'
-install: skip
-script: skip
+install: echo hello
+script: echo hello
 
 #     - stage: setupcache
 #     - sudo: required
