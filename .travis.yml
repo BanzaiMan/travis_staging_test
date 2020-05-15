@@ -1,4 +1,4 @@
-language: c
+language: shell
 os: freebsd
 dist: '12.1'
 install: skip
