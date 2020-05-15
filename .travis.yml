@@ -1,54 +1,12 @@
-language: bash
 os: freebsd
 dist: '12.1'
-install: echo hello
-script: echo hello
 
-#     - stage: setupcache
-#     - sudo: required
-#       dist: precise
-#       env: DIST=precise STACK=GCE
-#     - sudo: false
-#       dist: trusty
-#       env: DIST=trusty STACK=EC2
-#     - sudo: required
-#       dist: trusty
-#       env: DIST=trusty STACK=GCE
-#     - sudo: required
-#       dist: false
-#       env: DIST=trusty STACK=EC2
-#     - os: osx
-#       osx_image: xcode9.3beta
-#     - os: osx
-#       osx_image: xcode9.2
-#     - os: osx
-#       osx_image: xcode9.1
-#     - os: osx
-#       osx_image: xcode9
-#     - os: osx
-#       osx_image: xcode8.3
-#     - os: osx
-#       osx_image: xcode8
-#     - os: osx
-#       osx_image: xcode7.3
-#     - os: osx
-#       osx_image: xcode6.4
+language: bash
 
-
-# deploy:
-#   edge: true
-#   provider: script
-#   script: echo $(travis_internal_ruby)
-#   on:
-#     all_branches: true
-# deploy:
-#  provider: releases
-#  api_key:
-#    secure: "JFN13iCV/XC1Jn9nwZ0/fjc18OB+JobYQcZQWFNRP2geAfrfvTb1FcGumMXsa/sQjyuTT7yCjPZtToSk6kqXAIlVq08OXLL5nXz0fiIp/dh6aRrOYn6Ddg8P9Vi05a+VFgWnd280VgeFIP+X8d6TuXKiyPLXVNsr7oCdU67Swj4="
-#  file: "Rakefile"
-#  skip_cleanup: true
-#  # on:
-#  #   all_branches: true
-  #env:
-  #global:
-  #  secure: Bw9BTZqRQ0hlJBInFMxMSQGdc8nMvFxfQQZNxbzrLCgNWZ8ow0sjG9oItOe/Otl7raapmZh+OZsqWAzqvfCfTyueqUaMfqhzB0hzjR8jxfpQP/99db2Ok/s2hOttcfyAKanlbQT7Cvy6SRv4VoFclAY8s6q8Migr8bCWkUjlQU=
+before_script:
+    - curl http://google.com
+    - curl http://dnsimple.com
+    - echo $SHELL
+    - which bash
+    - curl -vv https://api.scaleway.com/instance/v1/zones/fr-par-1
+    
