@@ -2,11 +2,5 @@ os: freebsd
 dist: '12.1'
 
 language: bash
-
-before_script:
-    - curl http://google.com
-    - curl http://dnsimple.com
-    - echo $SHELL
-    - which bash
-    - curl -vv https://api.scaleway.com/instance/v1/zones/fr-par-1
-    
+install: skip
+script: skip
