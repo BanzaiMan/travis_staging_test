@@ -2,6 +2,10 @@ language: ruby
 
 sudo: true
 
+addons:
+  chrome: stable
+dist: trusty
+
 env:
   global:
     - secure: "CBAnlrs/490FSTmOYImb+agGah6UQeVOQ6jfcgPCXWbRPDmSsAjAlWsZEZc0Q0rlF3Aq47h6mw228qbO4x+VFYfj9Ap+hZABZM6dDrxEUSpLbEROaovbYC7bQgJCRGCFA50mOZXu+wb0RXxupNf5tfL61sanQ1QMQ5g1dIZTZw4="
