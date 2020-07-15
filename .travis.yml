@@ -4,3 +4,7 @@ dist: '12.1'
 language: bash
 install: skip
 script: skip
+
+
+notifications:
+  email: false
