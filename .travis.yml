@@ -5,6 +5,5 @@ language: bash
 install: skip
 script: skip
 
-
 notifications:
   email: false
