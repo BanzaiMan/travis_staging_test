@@ -26,6 +26,12 @@ jobs:
       script:
         - cat foo.txt || true
         - cat bar.txt || true
+    - workspaces:
+        use:
+          - ws1
+      os: osx
+      script:
+        - cat foo.txt
 #     - stage: setupcache
 #     - sudo: required
 #       dist: precise
