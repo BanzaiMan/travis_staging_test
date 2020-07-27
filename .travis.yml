@@ -29,7 +29,7 @@ jobs:
     - workspaces:
         use:
           - ws1
-      os: freebsd
+      os: windows
       script:
         - cat foo.txt
 #     - stage: setupcache
