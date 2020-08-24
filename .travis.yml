@@ -3,12 +3,7 @@ warnings_are_errors: false
 fortran: false
 latex: false
 pandoc: false
-os: osx
-jobs:
-  include:
-    - disable_homebrew: true
-    - disable_homebrew: false
-
+dist: focal
 install: skip
 script: skip
 
