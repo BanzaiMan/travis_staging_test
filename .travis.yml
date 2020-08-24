@@ -3,7 +3,7 @@ warnings_are_errors: false
 fortran: false
 latex: false
 pandoc: false
-dist: focal
+dist: bionic
 install: skip
 script: skip
 
