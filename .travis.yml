@@ -2,6 +2,9 @@ language: ruby
 dist: xenial
 install: skip
 
+env:
+  - FOO=bar
+
 cache:
   branch: paths-relative
 jobs:
@@ -12,23 +15,23 @@ jobs:
         - echo "bar" > bar.txt
       workspaces:
         create:
-          - name: ws1
+          - name: ${FOO}-1
             paths:
               - foo.txt
-          - name: ws2
+          - name: ${FOO}-2
             paths:
               - bar.txt
     - stage: use_cache
       workspaces:
         use:
-          - ws1
-          - ws2
+          - ${FOO}-1
+          - ${FOO}-2
       script:
         - cat foo.txt || true
         - cat bar.txt || true
     - workspaces:
         use:
-          - ws1
+          - ${FOO}-1
       os: windows
       script:
         - cat foo.txt
