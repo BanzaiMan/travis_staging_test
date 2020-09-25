@@ -1,19 +1,15 @@
 language: python
+dist: bionic
+script: skip
 
-python: "3.7"
-
-sudo: required
-
-dist: xenial
-
-install: skip
-
-addons:
-  apt:
-    sources:
-      - deadsnakes
-    pacakges:
-      - python3.7-dev
+jobs:
+  include:
+    - name: upgrade pip
+      before_install: python -m pip install --upgrade pip
+    - name: default pip
+    
+notifications:
+  email: false
 
 # env:
 #   global:
