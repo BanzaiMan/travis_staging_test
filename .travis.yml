@@ -1,12 +1,6 @@
 language: ruby
 install: skip
 script: skip
-rvm: '3.0.0-preview2'
-jobs:
-  include:
-    - dist: xenial
-    - dist: bionic
-    - dist: focal
 
 #     - stage: setupcache
 #     - sudo: required
